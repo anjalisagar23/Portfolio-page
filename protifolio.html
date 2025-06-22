@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title> 
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  body {
+      font-family: 'Segoe UI', sans-serif;
+      background : rgb(233, 169, 251) ;
+      color: white;   
+}
+    /* Header Styling */
+    header {
+      background-color: #672c2cd9;
+      padding: 40px 20px;
+      text-align: center;
+      color: rgb(251, 243, 243);
+      border-bottom: 5px solid #714d5c;
+      box-shadow: 0 5px 10px black;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #fefbfb;
+      
+    }
+
+    .header-content h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 1.2em;
+      font-style: italic;
+      color: #fbfcfc;
+    }
+     /* About Section */
+    .about {
+      max-width: 900px;
+      margin: 40px auto;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+      background-color: #672c2cd9;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px black;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+
+    .about-text h2 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .about-text p {
+      font-size: 1.1em;
+      color: white;
+    }
+
+     /* Skills Section */
+    .skills {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #672c2cd9;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px black;
+    }
+
+    .skills h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skills-list span {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .skills-list span:hover {
+      background-color: black;
+    }
+
+    /* Projects */
+    .projects {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #672c2cd9;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px black;
+    }
+
+    .projects h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: white;
+    }
+
+    .project-card {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      align-items: center;
+      background: #672c2cd9;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px black;
+    }
+
+    .project-card img {
+      width: 200px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+
+    .project-info h3 {
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .project-info p {
+      font-size: 1em;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .about, .project-card {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* Resume*/
+    .resume {
+    background-color: black; color: white; 
+    padding: 12px 25px; 
+    text-decoration: none; 
+    border-radius: 25px; 
+    font-weight: bold; 
+    display: inline-block; 
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 5px 20px black;
+    }
+
+/* Contact */
+contact {
+    text-align: center;
+     font-size: 1.1em; 
+     margin-top: 15px;
+     
+}
+    
+/* Footer */
+footer {
+  background-color:black;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: blue;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about, .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+      
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="photo2.jpg" alt="Logo" class="logo"> 
+      <h1>Anjali Sagar</h1>
+      <p class="tagline">Frontend Developer | Pursuing from PWC with MCA</p>
+       </div>
+  </header>
+
+   <section class="about">
+    <img src="photo1.jpg" alt="My Photo">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Anjali, a passionate web developer with a love for clean and modern design.
+        I have experience with HTML, CSS, and JavaScript, and enjoy building responsive, user-friendly websites.
+        Currently exploring React and backend technologies to become a full-stack developer.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>Excel</span>
+      <span>SQL</span>
+    </div>
+  </section>
+
+  
+  <!-- Projects -->
+  <section class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <img src="portfolio wesite.png" alt="Project 1">
+      <div class="project-info">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio website built using HTML, CSS, and JavaScript. It showcases my skills, projects, and contact information in a clean and modern design.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="calculator app.png" alt="Project 2">
+      <div class="project-info">
+        <h3>Calculator App</h3>
+        <p>A simple and intuitive Calculator application created using JavaScript, allowing users to add, delete, and mark tasks as complete.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="landing page.png" alt="Project 3">
+      <div class="project-info">
+        <h3>Landing Page</h3>
+        <p>A beautifully designed product landing page using modern layout. Fully mobile-friendly with responsive elements.</p>
+      </div>
+    </div>
+</section>
+  
+ <!-- Resume Section -->
+  <section class="skills">
+    <h2>Download My Resume</h2>
+    <div class="resume">
+      <a href="Anjali_Sagar_CV.pdf" download </a>
+         Download Resume (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="skills">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <p><strong>Email:</strong> anjali07sagar@gmail.com</p>
+      <p><strong>Phone:</strong> +91 8406096688</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Anjali Sagar. All rights reserved.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/anjali-sagar-043440285" target="_blank">LinkedIn</a>
+|
+      <a href="https://github.com/anjalisagar23">GitHub</a> |
+      <a href="https://anjali07sagar@gmail.com" target="_blank">Email</a>
+
+
+    </p>
+  </footer>
+
+
+</body>
+</html>
+</body>
+</html>
+
